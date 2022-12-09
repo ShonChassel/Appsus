@@ -1,0 +1,59 @@
+.note-list {
+    display: grid;
+    gap: 10px;
+    grid-template-rows: 30px 1fr 30px 1fr;
+    overflow: auto;
+    overflow-x: hidden;
+    justify-items: center;
+}
+.note-list .pin-notes{
+    /* display: grid;
+    grid-template-columns: repeat(auto-fill,262px);
+    gap: 10px;
+    justify-content: center; */
+    columns: 4;
+    column-count: auto 262px;
+    
+}
+.note-list .un-pin-notes{
+    /* display: grid;
+    grid-template-columns: repeat(auto-fill,262px);
+    gap: 10px;
+    justify-content: center; */
+    columns: 4;
+    column-count: auto 262px;
+}
+@media (max-width:1120px) {
+    .note-list .pin-notes{
+        columns: 3;
+    }
+    .note-list .un-pin-notes{
+        columns: 3;
+    }
+}
+@media (max-width:835px) {
+    .note-list .pin-notes{
+        columns: 2;
+    }    
+    .note-list .un-pin-notes{
+        columns: 2;
+    }
+}
+@media (max-width:560px) {
+    .note-list .pin-notes{
+        columns: 1;
+    }    
+    .note-list .un-pin-notes{
+        columns: 1;
+    }
+}
+.note-list .title{
+    margin-left: 4.5%;
+    justify-self: start;
+    background-color: white;
+    padding: 5px;
+    border-radius: 10px;
+}
+.note-list.fix-grid {
+    grid-template-rows: 26px 1fr;
+}

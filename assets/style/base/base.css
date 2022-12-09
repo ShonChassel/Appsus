@@ -1,0 +1,54 @@
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+  margin: 0;
+  color: var(--clr4);
+  background-image: url(../../img/sea.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 ;
+  font-family: 'Roboto', cursive;
+}
+
+p {
+  margin: 0 0 1em;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+
+
+/* Dont stretch my Media */
+img,
+embed,
+video,
+object {
+  max-width: 100%
+}
+
+/* tap targets: */
+nav a,
+button {
+  min-width: 48px;
+  min-height: 48px;
+}
+
+/* Simple and useful CSS Debugging Technique */
+.debug * {
+  outline: 1px solid gold
+}
+

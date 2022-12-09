@@ -1,0 +1,87 @@
+.note-add {
+    display: grid;
+    place-items: center;
+}
+
+.note-add form {
+    box-shadow:0 0 4px 1px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #fff;
+}
+.note-add .btns{
+    display: flex;
+}
+
+.note-add input, .note-add button{
+    border: 0;
+    background-color: white;
+}
+
+.note-add button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.note-add button:hover{
+    background: radial-gradient( rgba(177, 177, 177,30%) 50%, #fff 50%);
+}
+
+
+.note-add img {
+    width: 24px;
+}
+
+.first{
+    border-start-start-radius: 10px;
+    border-end-start-radius: 10px;
+}
+input:focus {
+    outline: 0;
+}
+
+.last {
+    border-start-end-radius: 10px;
+    border-end-end-radius: 10px;
+}
+
+.imgBtn{
+    position: relative;
+}
+input[type=file]{
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    width: 48px;
+
+}
+@media(max-width: 475px){
+
+}
+
+@media(max-width: 475px){
+    .note-add form{
+        width: 80%;
+    }
+    .note-add form input:first-child{
+        border-start-end-radius: 10px;
+    }
+    .first{
+        order: -1;
+        flex-grow: 1;
+    }
+    .btns{
+        width: 100%;
+        order:1;
+        justify-content: space-around;
+    }
+    .btns button:last-child{
+        border-end-end-radius: 10px;
+    }
+    .btns button:first-child{
+        border-end-start-radius: 10px;
+    }
+}

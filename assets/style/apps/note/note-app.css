@@ -1,0 +1,16 @@
+.note-app {
+    height: 90vh;
+    /* width: 100vw; */
+    display: grid;
+    grid-template-rows: 10vh 80vh;
+    background-image: url(../../../img/sea.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* object-fit: fill; */
+}
+
+@media(max-width: 475px){
+    .note-app{
+        grid-template-rows: 20vh 70vh;
+    }
+}

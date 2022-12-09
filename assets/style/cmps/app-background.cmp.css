@@ -1,0 +1,18 @@
+.backgrounds {
+    position: fixed;
+    right: 50%;
+    top: 50%;
+    transform: translate(50%,-50%);
+    background-color: white;
+    border: 1px solid black;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    gap: 10px;
+    border-radius: 10px;
+    display: none;
+}
+.backgrounds img{
+    width: 150px;
+}

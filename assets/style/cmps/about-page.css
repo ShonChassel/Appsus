@@ -1,0 +1,89 @@
+.about-page {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 90vh;
+
+}
+
+figure {
+  width: 345px;
+  aspect-ratio: 5 / 5;
+  --bg: hsl(330 80% calc(90% - (var(--hover) * 10%)));
+  --accent: hsl(185deg 80% 40%);
+  transition: background 0.2s;
+  background: radial-gradient(
+      circle at top left,
+      var(--accent),
+      transparent 75%
+    ),
+    var(--bg);
+  margin: 0;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10.5rem;
+}
+
+figure:after {
+  content: "";
+  position: absolute;
+  width: 20%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  bottom: 0%;
+  left: 10%;
+  background: linear-gradient(-65deg, var(--bg) 50%, var(--accent) 50%);
+  filter: blur(25px);
+  transform: translateX(calc(var(--hover) * 15%))
+    scale(calc(1 + (var(--hover) * 0.2)));
+  transition: transform 0.2s, background 0.2s;
+}
+
+.about-page article img {
+  position: absolute;
+  left: 30%;
+  top: 15%;
+  width: 40%;
+  transform: translateX(calc(var(--hover) * -15%))
+    scale(calc(1 + (var(--hover) * 0.2)));
+  transition: transform 0.2s;
+}
+
+.about-page article {
+  --hover: 0;
+  /* margin: 200px; */
+}
+
+.about-page article:hover {
+  --hover: 1;
+}
+
+.person-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.about-page h2, .about-page p{
+  background-color: white;
+  padding: 5px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+
+@media (max-width: 520px) {
+  .about-page {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  figure {
+    width: 289px;
+  }
+  .about-page article {
+    --hover: 0;
+    margin: 13px;
+  }
+  
+}
