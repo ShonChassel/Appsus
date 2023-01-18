@@ -22,7 +22,7 @@ I developed the project over the course of approximately A week and a half. In o
 
 After designing a prototype of the application using Adobe XD, I started developing the app using the following technologies:
 
-- Vue.js 
+- Vue.js. 
 - javascript.
 
 - SCSS modules (CSS grid & CSS Flexbox & Media queries)
