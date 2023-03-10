@@ -14,7 +14,7 @@ Appsus is a Mail & Notes App.
 <img src='assets/img/apsus.PNG'/>
 <br/>
 
-## My Process
+## My Process:
 
 I developed the project over the course of approximately A week and a half. In order to learn as much as I can from the development of this project, I implemented certain features from scratch including accessible and scrollable tabs, a carousel functionality, and infinite loading.
 
