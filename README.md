@@ -18,7 +18,7 @@ Appsus is a Mail & Notes App.
 
 I developed the project over the course of approximately A week and a half. In order to learn as much as I can from the development of this project, I implemented certain features from scratch including accessible and scrollable tabs, a carousel functionality, and infinite loading.
 
-### Tools
+### Tools.
 
 After designing a prototype of the application using Adobe XD, I started developing the app using the following technologies:
 
